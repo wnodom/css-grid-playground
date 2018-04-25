@@ -1,0 +1,12 @@
+<div class="playing-card front" [ngClass]="suit">
+  <div class="rank">{{ rank }}</div>
+  <div class="symbol">{{ symbol }}</div>
+  <div class="pic" [ngClass]="'rank-' + rank ">
+    <div *ngFor="let picSymbol of picSymbols; index as i"
+      [ngClass]=" 's' + (i + 1) ">
+      {{ symbol }}
+    </div>
+  </div>
+  <div class="inverted symbol">{{ symbol }}</div>
+  <div class="inverted rank">{{ rank }}</div>
+</div>

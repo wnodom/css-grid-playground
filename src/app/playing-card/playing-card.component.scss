@@ -1,0 +1,202 @@
+.playing-card {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+
+  width: 2.5in;
+  height: 3.5in;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  &.front {
+    background-color: white;
+  }
+
+  display: grid;
+
+  grid-template:
+    " rank    .    .               "  auto
+    " symbol  pic  .               "  auto
+    " .       pic  .               "  1fr
+    " .       pic  inverted-symbol "  auto
+    " .       .    inverted-rank   "  auto
+    / auto    1fr  auto
+  ;
+}
+
+.rank, .symbol, .pic {
+  align-self: center;
+  justify-self: center;
+}
+
+.rank {
+  grid-area: rank;
+}
+
+.symbol {
+  grid-area: symbol;
+}
+
+.pic {
+  grid-area: pic;
+  display: grid;
+  line-height: 2;
+  font-size: 48px;
+  height: 100%;
+}
+
+.pic.rank-A,
+.pic.rank-J,
+.pic.rank-Q,
+.pic.rank-K {
+  grid-template:
+    " s1 " 1fr
+    / 1fr
+  ;
+  line-height: 2;
+  font-size: 144px;
+}
+
+.pic.rank-2 {
+  grid-template:
+    " .   .   .   " 1fr
+    " .   s1  .   " 1fr
+    " .   .   .   " 1fr
+    " .   .   .   " 1fr
+    " .   .   .   " 1fr
+    " .   s2  .   " 1fr
+    " .   .   .   " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-3 {
+  grid-template:
+    " .   s1  .   " 1fr
+    " .   s2  .   " 1fr
+    " .   s3  .   " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-4 {
+  grid-template:
+    " .   .   .   " 1fr
+    " s1  .   s2  " 1fr
+    " .   .   .   " 1fr
+    " .   .   .   " 1fr
+    " .   .   .   " 1fr
+    " s3  .   s4  " 1fr
+    " .   .   .   " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-5 {
+  grid-template:
+    " .   .   .   " 1fr
+    " s1  .   s2  " 1fr
+    " .   .   .   " 1fr
+    " .   s3  .   " 1fr
+    " .   .   .   " 1fr
+    " s4  .   s5  " 1fr
+    " .   .   .   " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-6 {
+  grid-template:
+    " .   .   .   " 1fr
+    " s1  .   s2  " 1fr
+    " .   .   .   " 1fr
+    " s3  .   s4  " 1fr
+    " .   .   .   " 1fr
+    " s5  .   s6  " 1fr
+    " .   .   .   " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-7 {
+  grid-template:
+    " s1  .   s2  " 1fr
+    " s1  s3  s2  " 1fr
+    " s4  s3  s5  " 1fr
+    " s4  .   s5  " 1fr
+    " s6  .   s7  " 1fr
+    " s6  .   s7  " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-8 {
+  grid-template:
+    " s1  .   s2  " 1fr
+    " s1  .   s2  " 1fr
+    " s3  .   s4  " 1fr
+    " s3  .   s4  " 1fr
+    " s5  .   s6  " 1fr
+    " s5  .   s6  " 1fr
+    " s7  .   s8  " 1fr
+    " s7  .   s8  " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-9 {
+  grid-template:
+    " s1  .   s3  " 1fr
+    " s1  .   s3  " 1fr
+    " s4  .   s5  " 1fr
+    " s4  s2  s5  " 1fr
+    " s6  s2  s7  " 1fr
+    " s6  .   s7  " 1fr
+    " s8  .   s9  " 1fr
+    " s8  .   s9  " 1fr
+    / 1fr 1fr 1fr
+}
+
+.pic.rank-10 {
+  grid-template:
+    " s1  .   s3  " 1fr
+    " s1  s2  s3  " 1fr
+    " s4  s2  s5  " 1fr
+    " s4  .   s5  " 1fr
+    " s6  .   s7  " 1fr
+    " s6  s8  s7  " 1fr
+    " s9  s8  s10 " 1fr
+    " s9  .   s10 " 1fr
+    / 1fr 1fr 1fr
+}
+
+.s1  { grid-area: s1  };
+.s2  { grid-area: s2  };
+.s3  { grid-area: s3  };
+.s4  { grid-area: s4  };
+.s5  { grid-area: s5  };
+.s6  { grid-area: s6  };
+.s7  { grid-area: s7  };
+.s8  { grid-area: s8  };
+.s9  { grid-area: s9  };
+.s10 { grid-area: s10 };
+.s11 { grid-area: s11 };
+.s12 { grid-area: s12 };
+.s13 { grid-area: s13 };
+
+
+.inverted.symbol {
+  grid-area: inverted-symbol;
+}
+
+.inverted.rank {
+  grid-area: inverted-rank;
+}
+
+.inverted {
+  transform: rotate(180deg);
+}
+
+.hearts, .diamonds {
+  color: red;
+}
+
+.spades, .clubs {
+  color: black;
+}
+
