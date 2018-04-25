@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { examples } from './examples';
+
 @Component({
   selector: 'cgp-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CSS Grid Playground';
+
+  examples = examples;
 }
