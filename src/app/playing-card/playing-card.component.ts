@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+const imageDir = '/assets/card-faces';
+
 const symbols = {
   clubs:    '\u2663',
   diamonds: '\u2666',
@@ -8,19 +10,19 @@ const symbols = {
 };
 
 const rankToNumberOfSymbols = {
-  'A': 1,
-  '2': 2,
-  '3': 3,
-  '4': 4,
-  '5': 5,
-  '6': 6,
-  '7': 7,
-  '8': 8,
-  '9': 9,
-  '10' 10,
-  'J': 1,
-  'Q': 1,
-  'K': 1,
+  'A':  1,
+  '2':  2,
+  '3':  3,
+  '4':  4,
+  '5':  5,
+  '6':  6,
+  '7':  7,
+  '8':  8,
+  '9':  9,
+  '10': 10,
+  'J':  0,
+  'Q':  0,
+  'K':  0,
 };
 
 @Component({
@@ -34,13 +36,21 @@ export class PlayingCardComponent implements OnInit {
 
   symbol: string = '';
   picSymbols: string[] = [];
+  cardImageUrl: string = '';
 
   constructor() { }
 
   ngOnInit() {
+    let numSymbols = rankToNumberOfSymbols[this.rank];
+
     this.symbol = symbols[this.suit];
 
-    this.picSymbols = Array( rankToNumberOfSymbols[this.rank] ).fill(this.symbol);
+    if (numSymbols > 0) {
+      this.picSymbols = Array( numSymbols ).fill(this.symbol);
+    }
+    else {
+      this.cardImageUrl = imageDir + '/' + this.rank + '-' + this.suit + '.png';
+    }
   }
 
 }

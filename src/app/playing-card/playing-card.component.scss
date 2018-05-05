@@ -47,10 +47,19 @@
   height: 100%;
 }
 
-.pic.rank-A,
+.pic.rank-A {
+  grid-template:
+    " s1 " 1fr
+    / 1fr
+  ;
+  line-height: 2;
+  font-size: 144px;
+}
+
 .pic.rank-J,
 .pic.rank-Q,
 .pic.rank-K {
+  align-items: center;
   grid-template:
     " s1 " 1fr
     / 1fr
