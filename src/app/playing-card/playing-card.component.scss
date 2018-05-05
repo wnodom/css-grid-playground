@@ -17,16 +17,16 @@
   display: grid;
 
   grid-template:
-    " rank    .    .               "  auto
-    " symbol  pic  .               "  auto
-    " .       pic  .               "  1fr
-    " .       pic  inverted-symbol "  auto
-    " .       .    inverted-rank   "  auto
-    / auto    1fr  auto
+    " rank        .       .                   "  auto
+    " corner-pip  design  .                   "  auto
+    " .           design  .                   "  1fr
+    " .           design  inverted-corner-pip "  auto
+    " .           .       inverted-rank       "  auto
+    / auto        1fr     auto
   ;
 }
 
-.rank, .symbol, .pic {
+.rank, .corner-pip, .design {
   align-self: center;
   justify-self: center;
 }
@@ -35,158 +35,158 @@
   grid-area: rank;
 }
 
-.symbol {
-  grid-area: symbol;
+.corner-pip {
+  grid-area: corner-pip;
 }
 
-.pic {
+.design {
   align-items: center;
-  grid-area: pic;
+  grid-area: design;
   display: grid;
   font-size: 54px;
   height: 100%;
 }
 
-.pic.rank-A {
+.design.rank-A {
   grid-template:
-    " s1 " 1fr
+    " p1 " 1fr
     / 1fr
   ;
   font-size: 144px;
 }
 
-.pic.rank-J,
-.pic.rank-Q,
-.pic.rank-K {
+.design.rank-J,
+.design.rank-Q,
+.design.rank-K {
   grid-template:
-    " s1 " 1fr
+    " p1 " 1fr
     / 1fr
   ;
 }
 
-.pic.rank-2 {
+.design.rank-2 {
   grid-template:
     " .   .   .   " 1fr
-    " .   s1  .   " 1fr
+    " .   p1  .   " 1fr
     " .   .   .   " 1fr
     " .   .   .   " 1fr
     " .   .   .   " 1fr
-    " .   s2  .   " 1fr
+    " .   p2  .   " 1fr
     " .   .   .   " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-3 {
+.design.rank-3 {
   grid-template:
-    " .   s1  .   " 1fr
-    " .   s2  .   " 1fr
-    " .   s3  .   " 1fr
+    " .   p1  .   " 1fr
+    " .   p2  .   " 1fr
+    " .   p3  .   " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-4 {
+.design.rank-4 {
   grid-template:
     " .   .   .   " 1fr
-    " s1  .   s2  " 1fr
+    " p1  .   p2  " 1fr
     " .   .   .   " 1fr
     " .   .   .   " 1fr
     " .   .   .   " 1fr
-    " s3  .   s4  " 1fr
-    " .   .   .   " 1fr
-    / 1fr 1fr 1fr
-}
-
-.pic.rank-5 {
-  grid-template:
-    " .   .   .   " 1fr
-    " s1  .   s2  " 1fr
-    " .   .   .   " 1fr
-    " .   s3  .   " 1fr
-    " .   .   .   " 1fr
-    " s4  .   s5  " 1fr
+    " p3  .   p4  " 1fr
     " .   .   .   " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-6 {
+.design.rank-5 {
   grid-template:
     " .   .   .   " 1fr
-    " s1  .   s2  " 1fr
+    " p1  .   p2  " 1fr
     " .   .   .   " 1fr
-    " s3  .   s4  " 1fr
+    " .   p3  .   " 1fr
     " .   .   .   " 1fr
-    " s5  .   s6  " 1fr
+    " p4  .   p5  " 1fr
     " .   .   .   " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-7 {
+.design.rank-6 {
   grid-template:
-    " s1  .   s2  " 1fr
-    " s1  s3  s2  " 1fr
-    " s4  s3  s5  " 1fr
-    " s4  .   s5  " 1fr
-    " s6  .   s7  " 1fr
-    " s6  .   s7  " 1fr
+    " .   .   .   " 1fr
+    " p1  .   p2  " 1fr
+    " .   .   .   " 1fr
+    " p3  .   p4  " 1fr
+    " .   .   .   " 1fr
+    " p5  .   p6  " 1fr
+    " .   .   .   " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-8 {
+.design.rank-7 {
   grid-template:
-    " s1  .   s2  " 1fr
-    " s1  .   s2  " 1fr
-    " s3  .   s4  " 1fr
-    " s3  .   s4  " 1fr
-    " s5  .   s6  " 1fr
-    " s5  .   s6  " 1fr
-    " s7  .   s8  " 1fr
-    " s7  .   s8  " 1fr
+    " p1  .   p2  " 1fr
+    " p1  p3  p2  " 1fr
+    " p4  p3  p5  " 1fr
+    " p4  .   p5  " 1fr
+    " p6  .   p7  " 1fr
+    " p6  .   p7  " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-9 {
+.design.rank-8 {
   grid-template:
-    " s1  .   s3  " 1fr
-    " s1  .   s3  " 1fr
-    " s4  .   s5  " 1fr
-    " s4  s2  s5  " 1fr
-    " s6  s2  s7  " 1fr
-    " s6  .   s7  " 1fr
-    " s8  .   s9  " 1fr
-    " s8  .   s9  " 1fr
+    " p1  .   p2  " 1fr
+    " p1  .   p2  " 1fr
+    " p3  .   p4  " 1fr
+    " p3  .   p4  " 1fr
+    " p5  .   p6  " 1fr
+    " p5  .   p6  " 1fr
+    " p7  .   p8  " 1fr
+    " p7  .   p8  " 1fr
     / 1fr 1fr 1fr
 }
 
-.pic.rank-10 {
+.design.rank-9 {
   grid-template:
-    " s1  .   s3  " 1fr
-    " s1  s2  s3  " 1fr
-    " s4  s2  s5  " 1fr
-    " s4  .   s5  " 1fr
-    " s6  .   s7  " 1fr
-    " s6  s8  s7  " 1fr
-    " s9  s8  s10 " 1fr
-    " s9  .   s10 " 1fr
+    " p1  .   p3  " 1fr
+    " p1  .   p3  " 1fr
+    " p4  .   p5  " 1fr
+    " p4  p2  p5  " 1fr
+    " p6  p2  p7  " 1fr
+    " p6  .   p7  " 1fr
+    " p8  .   p9  " 1fr
+    " p8  .   p9  " 1fr
     / 1fr 1fr 1fr
 }
 
-.s1  { grid-area: s1  };
-.s2  { grid-area: s2  };
-.s3  { grid-area: s3  };
-.s4  { grid-area: s4  };
-.s5  { grid-area: s5  };
-.s6  { grid-area: s6  };
-.s7  { grid-area: s7  };
-.s8  { grid-area: s8  };
-.s9  { grid-area: s9  };
-.s10 { grid-area: s10 };
-.s11 { grid-area: s11 };
-.s12 { grid-area: s12 };
-.s13 { grid-area: s13 };
+.design.rank-10 {
+  grid-template:
+    " p1  .   p3  " 1fr
+    " p1  p2  p3  " 1fr
+    " p4  p2  p5  " 1fr
+    " p4  .   p5  " 1fr
+    " p6  .   p7  " 1fr
+    " p6  p8  p7  " 1fr
+    " p9  p8  p10 " 1fr
+    " p9  .   p10 " 1fr
+    / 1fr 1fr 1fr
+}
+
+.p1  { grid-area: p1  };
+.p2  { grid-area: p2  };
+.p3  { grid-area: p3  };
+.p4  { grid-area: p4  };
+.p5  { grid-area: p5  };
+.p6  { grid-area: p6  };
+.p7  { grid-area: p7  };
+.p8  { grid-area: p8  };
+.p9  { grid-area: p9  };
+.p10 { grid-area: p10 };
+.p11 { grid-area: p11 };
+.p12 { grid-area: p12 };
+.p13 { grid-area: p13 };
 
 
-.inverted.symbol {
-  grid-area: inverted-symbol;
+.inverted.corner-pip {
+  grid-area: inverted-corner-pip;
 }
 
 .inverted.rank {
