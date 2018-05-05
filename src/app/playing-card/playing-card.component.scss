@@ -3,7 +3,7 @@
   font-weight: bold;
   font-size: 24px;
 
-  width: 2.5in;
+  width: 2.25in;
   height: 3.5in;
   margin: 10px;
   padding: 10px;
@@ -40,10 +40,10 @@
 }
 
 .pic {
+  align-items: center;
   grid-area: pic;
   display: grid;
-  line-height: 2;
-  font-size: 48px;
+  font-size: 54px;
   height: 100%;
 }
 
@@ -52,20 +52,16 @@
     " s1 " 1fr
     / 1fr
   ;
-  line-height: 2;
   font-size: 144px;
 }
 
 .pic.rank-J,
 .pic.rank-Q,
 .pic.rank-K {
-  align-items: center;
   grid-template:
     " s1 " 1fr
     / 1fr
   ;
-  line-height: 2;
-  font-size: 144px;
 }
 
 .pic.rank-2 {
