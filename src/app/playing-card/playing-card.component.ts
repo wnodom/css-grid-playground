@@ -9,7 +9,7 @@ const symbols = {
   spades:   '\u2660',
 };
 
-const rankToNumberOfSymbols = {
+const rankToNumberOfPips = {
   'A':  1,
   '2':  2,
   '3':  3,
@@ -41,12 +41,12 @@ export class PlayingCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    let numSymbols = rankToNumberOfSymbols[this.rank];
+    let numPips = rankToNumberOfPips[this.rank];
 
     this.symbol = symbols[this.suit];
 
-    if (numSymbols > 0) {
-      this.picSymbols = Array( numSymbols ).fill(this.symbol);
+    if (numPips > 0) {
+      this.picSymbols = Array(numPips).fill(this.symbol);
     }
     else {
       this.cardImageUrl = imageDir + '/' + this.rank + '-' + this.suit + '.png';
