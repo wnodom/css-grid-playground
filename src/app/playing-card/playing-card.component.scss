@@ -1,3 +1,7 @@
+:host {
+  display: block;
+}
+
 .playing-card {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -5,7 +9,7 @@
 
   width: 2.25in;
   height: 3.5in;
-  margin: 10px;
+  margin: 0;
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
