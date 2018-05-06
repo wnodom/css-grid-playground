@@ -1,0 +1,51 @@
+:host {
+  display: grid;
+
+  grid-gap: 0;
+
+  grid-template:
+    " header  header "  auto
+    " nav     main   "  1fr
+    " footer  footer "  auto
+    / 250px   minmax(500px, 1fr)
+  ;
+
+  height: 100vh;
+  padding: 0;
+
+  // Uncomment to highlight grid area on hover
+  //
+  // & > *:hover {
+  //   outline: 5px ridge lightgreen;
+  //   outline-offset: -5px;
+  // }
+}
+
+header {
+  grid-area: header;
+  background: lightgrey;
+  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.33);
+  z-index: 1;
+}
+
+nav {
+  grid-area: nav;
+  background: lightgrey;
+  border-right: 3px solid darkgrey;
+  padding: 20px;
+}
+
+main {
+  grid-area: main;
+  overflow: auto;
+}
+
+footer {
+  grid-area: footer;
+  background: lightgrey;
+  padding: 20px;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.33);
+  z-index: 1;
+}
+
