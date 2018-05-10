@@ -1,0 +1,25 @@
+:host {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr auto;
+}
+
+img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.caption {
+  padding: 1em;
+  color: white;
+  background: rgba(200, 0, 0, 0.5);
+  font-weight: bold;
+  grid-row: -2 / -1;
+  grid-column: 1 / -1;
+  text-align: right;
+}
+
