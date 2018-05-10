@@ -1,7 +1,8 @@
 :host {
   display: grid;
   min-height: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fill, 150px);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 20px;
   padding: 20px;
   background-color: black;
