@@ -9,6 +9,8 @@ import { PlayingCardComponent } from './playing-card/playing-card.component';
 import { ImageGalleryExampleComponent } from './image-gallery-example/image-gallery-example.component';
 import { CaptionedImageComponent } from './captioned-image/captioned-image.component';
 import { CaptionedImageExampleComponent } from './captioned-image-example/captioned-image-example.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { CaptionedImageExampleComponent } from './captioned-image-example/captio
     PlayingCardComponent,
     ImageGalleryExampleComponent,
     CaptionedImageComponent,
-    CaptionedImageExampleComponent
+    CaptionedImageExampleComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
