@@ -38,8 +38,6 @@ export class PlayingCardComponent implements OnInit {
   designPips: string[] = [];
   cardImageUrl: string = '';
 
-  constructor() { }
-
   ngOnInit() {
     let numPips = rankToNumberOfPips[this.rank];
 
@@ -52,5 +50,4 @@ export class PlayingCardComponent implements OnInit {
       this.cardImageUrl = imageDir + '/' + this.rank + '-' + this.suit + '.png';
     }
   }
-
 }

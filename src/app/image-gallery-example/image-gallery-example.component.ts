@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 const imageDir = '/assets/space-images';
 
@@ -7,7 +7,7 @@ const imageDir = '/assets/space-images';
   templateUrl: './image-gallery-example.component.html',
   styleUrls: ['./image-gallery-example.component.scss']
 })
-export class ImageGalleryExampleComponent implements OnInit {
+export class ImageGalleryExampleComponent {
 
   static label: string = 'Image Gallery';
 
@@ -33,10 +33,4 @@ export class ImageGalleryExampleComponent implements OnInit {
     'toothbrush-nebula.jpg',
     'veil-nebula-supernova-remnant.jpg',
   ].map( (name: string) => imageDir + '/' + name );
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }
