@@ -14,6 +14,7 @@ export class ChessboardExampleComponent implements OnInit {
   rotx: number = 0;
   roty: number = 0;
   rotz: number = 0;
+  extras: string = '';
   transformations: SafeStyle;
 
   constructor(private sanitizer: DomSanitizer) { }
@@ -35,6 +36,7 @@ export class ChessboardExampleComponent implements OnInit {
         this.rotx = 0;
         this.roty = 0;
         this.rotz = 0;
+        this.extras = '';
         break;
 
       case 'ArrowUp':
@@ -59,6 +61,10 @@ export class ChessboardExampleComponent implements OnInit {
 
       case 'KeyX':
         this.rotz++;
+        break;
+
+      case 'KeyD':
+        this.extras = this.extras ? '' : 'disco';
         break;
     }
 

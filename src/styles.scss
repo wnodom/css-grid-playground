@@ -54,11 +54,26 @@ a {
 }
 
 @keyframes rotation {
-		from {
-				transform: rotate(0deg);
-		}
-		to {
-				transform: rotate(359deg);
-		}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.disco {
+  animation: disco 0.3s linear infinite alternate;
+}
+
+
+@keyframes disco {
+  from {
+    grid-gap: 0;
+  }
+  to {
+    grid-gap: 50px;
+  }
 }
 
