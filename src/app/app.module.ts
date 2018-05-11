@@ -10,6 +10,7 @@ import { ImageGalleryExampleComponent } from './image-gallery-example/image-gall
 import { CaptionedImageComponent } from './captioned-image/captioned-image.component';
 import { CaptionedImageExampleComponent } from './captioned-image-example/captioned-image-example.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ChessboardExampleComponent } from './chessboard-example/chessboard-example.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     ImageGalleryExampleComponent,
     CaptionedImageComponent,
     CaptionedImageExampleComponent,
+    ChessboardExampleComponent,
     WelcomeComponent
   ],
   imports: [
