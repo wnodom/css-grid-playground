@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'cgp-chessboard-example',
@@ -14,6 +14,7 @@ export class ChessboardExampleComponent implements OnInit {
   rotx: number = 0;
   roty: number = 0;
   rotz: number = 0;
+  transformations: SafeStyle;
 
   constructor(private sanitizer: DomSanitizer) { }
 
