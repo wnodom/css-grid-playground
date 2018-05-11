@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { SandboxExampleComponent } from './sandbox-example/sandbox-example.component';
 import { PlayingCardExampleComponent } from './playing-card-example/playing-card-example.component';
 import { PlayingCardComponent } from './playing-card/playing-card.component';
 import { ImageGalleryExampleComponent } from './image-gallery-example/image-gallery-example.component';
@@ -16,13 +17,14 @@ import { ChessboardExampleComponent } from './chessboard-example/chessboard-exam
 @NgModule({
   declarations: [
     AppComponent,
+    SandboxExampleComponent
     PlayingCardExampleComponent,
     PlayingCardComponent,
     ImageGalleryExampleComponent,
     CaptionedImageComponent,
     CaptionedImageExampleComponent,
     ChessboardExampleComponent,
-    WelcomeComponent
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
