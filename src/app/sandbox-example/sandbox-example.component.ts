@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './sandbox-example.component.html',
   styleUrls: ['./sandbox-example.component.scss']
 })
-export class SandboxExampleComponent implements OnInit {
+export class SandboxExampleComponent {
   static label: string = 'Sandbox';
 }
