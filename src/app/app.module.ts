@@ -12,19 +12,21 @@ import { CaptionedImageComponent } from './captioned-image/captioned-image.compo
 import { CaptionedImageExampleComponent } from './captioned-image-example/captioned-image-example.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ChessboardExampleComponent } from './chessboard-example/chessboard-example.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SandboxExampleComponent
+    WelcomeComponent,
+    SandboxExampleComponent,
     PlayingCardExampleComponent,
     PlayingCardComponent,
     ImageGalleryExampleComponent,
     CaptionedImageComponent,
     CaptionedImageExampleComponent,
     ChessboardExampleComponent,
-    WelcomeComponent,
+    ResourcesComponent,
   ],
   imports: [
     BrowserModule,
