@@ -4,7 +4,7 @@
 
 <nav>
   <a *ngFor="let example of examples"
-    routerLinkActive="currentExample"
+    routerLinkActive="currentSelection"
     [routerLink]="example.path"
   >
     {{ example.component.label || example.path }}
@@ -12,9 +12,9 @@
 
   <hr />
 
-  <a routerLink="illustrations" routerLinkActive="currentExample">Illustrations</a>
-  <a routerLink="resources"     routerLinkActive="currentExample">Resources</a>
-  <a routerLink="about"         routerLinkActive="currentExample">About</a>
+  <a routerLink="illustrations" routerLinkActive="currentSelection">Illustrations</a>
+  <a routerLink="resources"     routerLinkActive="currentSelection">Resources</a>
+  <a routerLink="about"         routerLinkActive="currentSelection">About</a>
 </nav>
 
 <main>
