@@ -66,6 +66,14 @@
     " p1 " 1fr
     / 1fr
   ;
+
+  align-items: middle;
+  justify-items: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .design.rank-2 {
