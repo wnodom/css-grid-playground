@@ -10,11 +10,27 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+header, footer, nav {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+footer {
+  a {
+    color: grey;
+  }
+
+  // Separate footer links with bullet characters
+  a:not(:last-child)::after {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    content: '\2022';
+  }
 }
 
 li {
