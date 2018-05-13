@@ -1,4 +1,7 @@
-# CssPlayground
+# CSS Grid Playground
+
+Run this application on StackBlitz:
+(CSS Grid Playground)[https://stackblitz.com/github/wnodom/css-grid-playground]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
