@@ -27,15 +27,15 @@ footer {
 
   // Separate footer links with bullet characters
   a:not(:last-child)::after {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
     content: '\2022';
   }
 }
 
 li {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .currentSelection {
