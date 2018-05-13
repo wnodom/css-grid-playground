@@ -14,6 +14,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ChessboardExampleComponent } from './chessboard-example/chessboard-example.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { IllustrationsComponent } from './illustrations/illustrations.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { IllustrationsComponent } from './illustrations/illustrations.component'
     ChessboardExampleComponent,
     IllustrationsComponent,
     ResourcesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
