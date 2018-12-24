@@ -1,30 +1,27 @@
 # CSS Grid Playground
 
-Run this application on StackBlitz:
-(CSS Grid Playground)[https://stackblitz.com/github/wnodom/css-grid-playground]
+This is a set of simple CSS Grid examples I ([Bill Odom][1]) originally
+created for a talk called "CSS Grid: Get ready to fall in love" at the
+2018 [Craft Conference][2] (although I've added a few things since
+then). You can find the latest version here:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+> [CSS Grid Playground on GitHub][3]
 
-## Development server
+If you'd like to try the application without installing it locally, you
+can run it entirely within your browser via StackBlitz:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> [CSS Grid Playground on StackBlitz][4]
 
-## Code scaffolding
+Note: While the examples are hosted in an [Angular][5] app that uses
+[Sass][6], that's just to make some things easier to build or
+demonstrate. None of the CSS Grid concepts are specific to Angular or
+Sass.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+[1]: http://www.billodom.com/
+[2]: https://craft-conf.com/2018
+[3]: https://github.com/wnodom/css-grid-playground
+[4]: https://stackblitz.com/github/wnodom/css-grid-playground
+[5]: https://angular.io/
+[6]: https://sass-lang.com/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
