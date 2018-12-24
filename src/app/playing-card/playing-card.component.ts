@@ -39,7 +39,7 @@ export class PlayingCardComponent implements OnInit {
   cardImageUrl: string = '';
 
   ngOnInit() {
-    let numPips = rankToNumberOfPips[this.rank];
+    const numPips = rankToNumberOfPips[this.rank];
 
     this.pip = pips[this.suit];
 
