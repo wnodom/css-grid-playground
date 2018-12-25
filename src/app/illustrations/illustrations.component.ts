@@ -13,6 +13,7 @@ export class IllustrationsComponent {
     'css-bears.gif',
     'css-properties-walk-into-a-bar.png',
     'css-is-easy.png',
+    'seeing-what-happens.jpg',
   ].map( (name: string) => imageDir + '/' + name );
 
 }
