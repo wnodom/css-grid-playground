@@ -10,5 +10,6 @@ import { examples } from './examples';
 export class AppComponent {
   title = 'CSS Grid Playground';
 
+  showNav: boolean;
   examples = examples;
 }
